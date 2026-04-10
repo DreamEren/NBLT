@@ -1,0 +1,139 @@
+.profile-page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 8px 0;
+}
+
+.profile-header {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 14px;
+  padding: 24px 28px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.profile-header h1 {
+  margin: 0 0 18px 0;
+  font-size: 26px;
+  color: #262626;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.label {
+  min-width: 84px;
+  color: #8c8c8c;
+  font-weight: 500;
+}
+
+.value {
+  color: #262626;
+  font-weight: 500;
+}
+
+.my-posts-section {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 14px;
+  padding: 24px 28px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.my-posts-section h2 {
+  margin: 0 0 20px 0;
+  font-size: 22px;
+  color: #262626;
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.post-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 20px;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  background: #fafafa;
+  transition: all 0.2s ease;
+}
+
+.post-item:hover {
+  background: #fff;
+  border-color: #d9d9d9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.post-item-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.post-item-title {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #1677ff;
+  text-decoration: none;
+}
+
+.post-item-title:hover {
+  color: #4096ff;
+  text-decoration: underline;
+}
+
+.post-item-summary {
+  margin: 0;
+  color: #595959;
+  line-height: 1.7;
+  word-break: break-word;
+}
+
+.loading,
+.error,
+.empty {
+  border-radius: 12px;
+  padding: 18px 20px;
+  text-align: center;
+}
+
+.loading {
+  background: #f5f5f5;
+  color: #595959;
+}
+
+.error {
+  background: #fff2f0;
+  color: #cf1322;
+  border: 1px solid #ffccc7;
+}
+
+.empty {
+  background: #fafafa;
+  color: #8c8c8c;
+  border: 1px dashed #d9d9d9;
+}
+
+.empty p {
+  margin: 0 0 14px 0;
+}
