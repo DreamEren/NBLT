@@ -9,9 +9,9 @@ spring:
 
   # OceanBase 数据库配置（兼容 MySQL 协议）
   datasource:
-    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:2881}/${DB_NAME:forum_db}?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
-    username: ${DB_USERNAME:root@test}
-    password: ${DB_PASSWORD:}
+    url: jdbc:mysql://127.0.0.1:2881/forum_db?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: "@@KINGdream1999"
     driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
       minimum-idle: 5

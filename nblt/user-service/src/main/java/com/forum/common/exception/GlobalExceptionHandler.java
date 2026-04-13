@@ -43,8 +43,9 @@ public class GlobalExceptionHandler {
      */
     @ExceptionHandler(Exception.class)
     public Result<Void> handleException(Exception e) {
-        log.error("系统异常: ", e);
-        return Result.error(ResultCode.ERROR);
+        log.error("系统异常: " + e.getMessage(), e);
+        String msg = e.getMessage() != null ? e.getMessage() : "未知错误";
+        return Result.error(ResultCode.ERROR.getCode(), "系统错误: " + msg);
     }
 
 }
