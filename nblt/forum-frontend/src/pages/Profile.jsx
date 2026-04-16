@@ -89,7 +89,7 @@ function Profile() {
         ) : posts.length === 0 ? (
           <div className="empty">
             <p>还没有发布过帖子</p>
-            <Link to="/create-post" className="btn-primary">去发帖</Link>
+            <a href="/create-post" target="_blank" rel="noopener noreferrer" className="btn-primary">去发帖</a>
           </div>
         ) : (
           <div className="posts-list">

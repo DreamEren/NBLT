@@ -17,6 +17,7 @@ spring:
             allowedOriginPatterns: "*"
             allowedMethods: "*"
             allowedHeaders: "*"
+            allowedExposedHeaders: "Authorization"
             allowCredentials: true
       
       # 路由配置

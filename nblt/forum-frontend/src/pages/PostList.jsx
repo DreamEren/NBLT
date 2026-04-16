@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import api from '../api';
 import './PostList.css';
 
@@ -10,7 +10,6 @@ function PostList() {
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize] = useState(10);
   const [total, setTotal] = useState(0);
-  const navigate = useNavigate();
 
   const fetchPosts = async (keyword = '', page = 1) => {
     try {
@@ -48,10 +47,7 @@ function PostList() {
   return (
     <div className="post-list-container">
       <div className="post-list-header">
-        <h1>论坛首页</h1>
-        <button onClick={() => navigate('/create-post')} className="btn-primary">
-          发布帖子
-        </button>
+        <h1>全部帖子</h1>
       </div>
 
       <div className="search-bar">

@@ -44,29 +44,31 @@ function CreatePost() {
 
   return (
     <div className="create-post">
-      <h1>发布新帖子</h1>
-      <div className="card">
+      <div className="post-list-header">
+        <h1>发布新帖子</h1>
+      </div>
+      <div className="search-bar" style={{padding: '20px'}}>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label>标题</label>
             <input
               type="text"
               name="title"
               value={formData.title}
               onChange={handleChange}
               required
-              placeholder="请输入帖子标题"
+              placeholder="标题：请输入帖子标题"
+              style={{fontSize: '16px', padding: '12px'}}
             />
           </div>
           <div className="form-group">
-            <label>内容</label>
             <textarea
               name="content"
               value={formData.content}
               onChange={handleChange}
               required
-              rows={10}
-              placeholder="请输入帖子内容"
+              rows={12}
+              placeholder="内容：请输入帖子内容..."
+              style={{minHeight: '300px', lineHeight: '1.8'}}
             />
           </div>
           {error && <div className="error">{error}</div>}
